@@ -1,4 +1,4 @@
-package com.example.projemanag
+package com.example.projemanag.activities
 
 import android.os.Bundle
 import android.view.WindowManager
