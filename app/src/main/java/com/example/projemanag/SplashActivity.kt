@@ -16,7 +16,7 @@ class SplashActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySplashBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_splash)
+        setContentView(binding!!.root)
 
         window.setFlags(
             WindowManager.LayoutParams.FLAG_FULLSCREEN,
