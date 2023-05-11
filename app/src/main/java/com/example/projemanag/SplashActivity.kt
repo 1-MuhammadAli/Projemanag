@@ -1,7 +1,9 @@
 package com.example.projemanag
 
+import android.content.Intent
 import android.graphics.Typeface
 import android.os.Bundle
+import android.os.Handler
 import android.os.PersistableBundle
 import android.view.WindowManager
 import androidx.appcompat.app.AppCompatActivity
@@ -23,6 +25,11 @@ class SplashActivity : AppCompatActivity() {
 
         val typeFace: Typeface = Typeface.createFromAsset(assets, "carbon bl.ttf")
         binding!!.tvAppName.typeface = typeFace
+
+        Handler().postDelayed({
+            startActivity(Intent(this, IntroActivity::class.java))
+            finish()
+        }, 2500)
 
     }
 }
